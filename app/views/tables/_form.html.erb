@@ -1,0 +1,41 @@
+<%= form_for(@table) do |f| %>
+  <% if @table.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@table.errors.count, "error") %> prohibited this table from being saved:</h2>
+
+      <ul>
+      <% @table.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pg_id %><br />
+    <%= f.number_field :pg_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_group_cd %><br />
+    <%= f.text_field :pg_group_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_group_desc %><br />
+    <%= f.text_field :pg_group_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_create_from %><br />
+    <%= f.text_field :pg_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_create_date %><br />
+    <%= f.date_select :pg_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_create_by %><br />
+    <%= f.text_field :pg_create_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

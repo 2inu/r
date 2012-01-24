@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pg:</b>
+  <%= @table.pg_id %>
+</p>
+
+<p>
+  <b>Pg group cd:</b>
+  <%= @table.pg_group_cd %>
+</p>
+
+<p>
+  <b>Pg group desc:</b>
+  <%= @table.pg_group_desc %>
+</p>
+
+<p>
+  <b>Pg create from:</b>
+  <%= @table.pg_create_from %>
+</p>
+
+<p>
+  <b>Pg create date:</b>
+  <%= @table.pg_create_date %>
+</p>
+
+<p>
+  <b>Pg create by:</b>
+  <%= @table.pg_create_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_table_path(@table) %> |
+<%= link_to 'Back', tables_path %>

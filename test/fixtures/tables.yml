@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pg_id: 1
+  pg_group_cd: MyString
+  pg_group_desc: MyString
+  pg_create_from: 
+  pg_create_date: 2012-01-24
+  pg_create_by: MyString
+
+two:
+  pg_id: 1
+  pg_group_cd: MyString
+  pg_group_desc: MyString
+  pg_create_from: 
+  pg_create_date: 2012-01-24
+  pg_create_by: MyString
